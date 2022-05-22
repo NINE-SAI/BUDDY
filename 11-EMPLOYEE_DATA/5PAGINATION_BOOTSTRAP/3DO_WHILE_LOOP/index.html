@@ -1,0 +1,35 @@
+<html>
+    <head>
+    </head>
+    <body onload="onload()">
+        <h1>EMPLOYEE DATA</h1>
+        <table border="2">
+            <thead>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>SALARY</th>
+            </thead>
+            <tbody id="id">
+            </tbody>
+        </table>
+    </body>
+    <script>
+        let employees = [
+                            {id:101 , name:"9SAI" , salary:45000} ,
+                            {id:102 , name:"ANIL" , salary:55000} ,
+                            {id:103 , name:"TEJA" , salary:50000}
+                        ]
+            let row = " "
+            var i = 0 ;
+            do{
+                row = row + `<tr>
+                                <td>${employees[i].id}</td>
+                                <td>${employees[i].name}</td>
+                                <td>${employees[i].salary}</td>
+                            </tr>`
+            i++
+            }
+            while (i<=2)
+            document.getElementById("id").innerHTML = row
+    </script>
+</html>

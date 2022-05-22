@@ -1,0 +1,12 @@
+// WRITE A RETURN STATEMENT  , THAT A STATEMENT IS AFTER THE RETURN STATEMENT
+// RETURN IS A LAST STATEMENT 
+// NO STATEMENTS WILL EXECUTE AFTER THE RETURN STATEMENT
+// AFTER RETURN STATEMENT WE WRITE ANY STATEMENT ARE UN-REACHABLE STATEMENTS
+// DONT'T WRITE ANYTHING AFTER RETURN STATEMENT  
+
+function wish ( ) {
+    return "GM"
+    console.log ( "GN" )
+}
+var message = wish ()
+console.log ( message )                                             // GM
