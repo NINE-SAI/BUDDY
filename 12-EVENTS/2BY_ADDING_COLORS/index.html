@@ -1,0 +1,22 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div >
+        <input id="upper" type="text" onblur="caps()">
+<button id="onclick" onclick="add()" style="background-color: red;">ONCLICK</button>
+</div>
+
+    </body>
+    <script>
+        function add () {
+    document.getElementById("onclick").style.background = "green"
+}
+function caps() {
+  let a =  document.getElementById("upper").value;
+    document.getElementById("upper").value = a.toUpperCase();
+}
+    </script>
+</html>
+

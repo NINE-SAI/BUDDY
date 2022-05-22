@@ -1,0 +1,6 @@
+// WAF WITH USING ONBLUR EVENT  // IT CHNAGES THE LOWER CASE INTO UPPER CASE
+
+
+function add() {
+    alert("9SAI")
+}

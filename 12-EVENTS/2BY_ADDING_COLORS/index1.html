@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="navbar navbar-dark bg-dark">
+            <a href="#">EVENTS</a>
+        </nav>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>9SAI</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <input id="onblur" type="text" onblur="caps()" class="form-control" class="form-control" >
+                            </div>
+                            <div class="form-group">
+                                <button id="onclick" onclick="add()" style="background-color: red;" class="form-control" >ONCLICK</button>
+                            </div>
+                            <div class="form-group">
+                                <button id="ondblclick" ondblclick="dbl()" style="background-color:violet" class="form-control" >ONDBLCLICK</button>
+                            </div>
+                            <div class="form-group">
+                                <button id="onmouseover" onmouseover="over()" style="background-color:burlywood" class="form-control">ONMOUSEOVER</button>
+                            </div>
+                            <div class="form-group">
+                                <button id="onmouseout" onmouseout="out()" style="background-color: chartreuse;" class="form-control">ONMOUSEOUT</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+function add() {
+    document.getElementById("onclick").style.background = "green"
+}
+function caps() {
+  let a =  document.getElementById("onblur").value;
+    document.getElementById("upper").value = a.toUpperCase();
+}
+function dbl() {
+    document.getElementById("ondblclick").style.background = "blue"
+}
+function over() {
+    document.getElementById("onmouseover").style.background = "violet"
+}
+function out() {
+    document.getElementById("onmouseout").style.background = "tan"
+}
+    </script>
+</html>
