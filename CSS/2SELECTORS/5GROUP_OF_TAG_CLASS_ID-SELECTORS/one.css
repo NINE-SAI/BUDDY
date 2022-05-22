@@ -1,0 +1,18 @@
+h1{
+    background-color: black;color: blue;font: 700;
+}
+
+
+h2,h3{
+    color: aqua;background-color: red;
+}
+
+
+.add{
+    background-color: green;
+}
+
+
+#add{
+    background-color: cadetblue;color: brown;list-style: lower-roman;
+}
