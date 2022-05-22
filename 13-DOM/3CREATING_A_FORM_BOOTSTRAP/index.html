@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"
+    </head>
+    <body>
+        <nav class="navbar navbar-dark bg-dark">
+            <a href="#">REGESTRATION <FORM></FORM></a>
+        </nav>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>REGESTRATION FORM</h4>
+                        </div>
+                        <div class="card-body">
+                            <form onsubmit="return validation()">
+                                <div class="form-group">
+                                    <input type="text" id="user_Name" class="form-control" placeholder="USER NAME">
+                                    <span id="validation_Name" style="color: red;"></span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="email_Id" class="form-control" placeholder="EMAIL ID">
+                                    <span id="validation_Email" style="color: red;"></span> 
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="Password" class="form-control" placeholder="PASSWORD">
+                                    <span id="validation_Password" style="color: red;"></span> 
+                                </div>
+                                <input type="SUBMIT" class="btn btn-success">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        function validation() {
+            let name = document.getElementById("user_Name").value
+            let email = document.getElementById("email_Id").value
+            let passcode = document.getElementById("Password").value
+            if (name == "") {
+                document.getElementById("validation_Name").innerHTML = "ENTER USER NAME"
+                return false
+            }
+            if (email == "") {
+                document.getElementById("validation_Email").innerHTML = "ENTER EMAIL ID"
+                return false
+            }
+            if (passcode == "") {
+                document.getElementById("validation_Password").innerHTML = "ENTER PASSWORD"
+                return false
+            }
+
+        }
+    </script>
+</html>

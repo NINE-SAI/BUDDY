@@ -1,0 +1,39 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>REGESTRATION FORM</h1>
+            <form onsubmit="return validation()">
+                <label>USER NAME</label>
+                <input type="text" id="user_Name">
+                <span id="validation_Name" style="color: red;"></span> <br> <br>
+                <label>EMAIL ID</label>
+                <input type="text" id="email_Id">
+                <span id="validation_Email" style="color: red;"></span> <br> <br>
+                <label>PASSWORD</label>
+                <input type="text" id="Password">
+                <span id="validation_Password" style="color: red;"></span> <br> <br>
+                <input type="SUBMIT">
+            </form>
+    </body>
+    <script>
+        function validation() {
+            let name = document.getElementById("user_Name").value
+            let email = document.getElementById("email_Id").value
+            let passcode = document.getElementById("Password").value
+            if (name == "") {
+                document.getElementById("validation_Name").innerHTML = "ENTER USER NAME"
+                return false
+            }
+            if (email == "") {
+                document.getElementById("validation_Email").innerHTML = "ENTER EMAIL ID"
+                return false
+            }
+            if (passcode == "") {
+                document.getElementById("validation_Password").innerHTML = "ENTER PASSWORD"
+                return false
+            }
+
+        }
+    </script>
+</html>
