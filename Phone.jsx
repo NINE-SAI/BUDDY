@@ -22,7 +22,7 @@ const Phone = () => {
   };
 
   useEffect(() => {
-    if (Object.keys(formerror).length === 0 && submit) {
+    if (Object.keys(formerror).length === 0) {
       const newStore = [...store, phone];
       setStore(newStore);
     }
