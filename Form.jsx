@@ -82,7 +82,6 @@ const Form = () => {
                                 </div>
                             </div>
                         </form>
-                        <div className='card-body'>
                             <table className='table table-hover'>
                                 <thead className='bg-dark text-white'>
                                     <tr>
@@ -107,7 +106,6 @@ const Form = () => {
                                     }
                                 </tbody>
                             </table>
-                        </div>
                     </div>
                 </div>
             </div>
