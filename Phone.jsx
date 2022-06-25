@@ -8,6 +8,7 @@ const Phone = () => {
   });
   const [store, setStore] = useState([]);
   const [formerror, setFormerror] = useState({});
+  sont [submit,setSubmit] = useState(false);
 
   const updateHandler = (event) => {
     setPhone({ ...phone, [event.target.name]: event.target.value });
@@ -15,6 +16,7 @@ const Phone = () => {
   const submitHandler = (event) => {
     event.preventDefault();
     setFormerror(validate(phone));
+      setSubmit(true)
   };
   const deleteHandler = (indexvalue) => {
     const filtredstore = store.filter((element, index) => index !== indexvalue);
@@ -22,7 +24,7 @@ const Phone = () => {
   };
 
   useEffect(() => {
-    if (Object.keys(formerror).length === 0) {
+    if (Object.keys(formerror).length === 0 && submit) {
       const newStore = [...store, phone];
       setStore(newStore);
     }
