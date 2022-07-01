@@ -8,7 +8,7 @@ const Phone = () => {
   });
   const [store, setStore] = useState([]);
   const [formerror, setFormerror] = useState({});
-  sont [submit,setSubmit] = useState(false);
+  const [submit,setSubmit] = useState(false);
 
   const updateHandler = (event) => {
     setPhone({ ...phone, [event.target.name]: event.target.value });
